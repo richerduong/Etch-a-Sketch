@@ -1,0 +1,22 @@
+.main-container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 512px; /* Assuming each box is 30px wide with a 2px gap, total width will be (30 + 2) * 16 */
+}
+
+.grid-item {
+  flex: 0 0 calc(100% / 19);
+  height: 30px;
+  background-color: #ccc;
+  border: 1px solid #888;
+  margin: 1px; /* This will create a gap of 2px between boxes */
+}
+
+.hovered {
+  background-color: #000;
+}
